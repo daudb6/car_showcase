@@ -15,6 +15,9 @@
 .padding-x{
   @apply sm:px-16 px-6; 
 }
+.padding-y{
+  @apply py-4 ; 
+}
 
 .custom-btn{
   @apply px-6 py-3 outline-none
@@ -24,7 +27,7 @@
 
 /* START: Hero Style */
 .hero{
-@apply flex flex-col xl:flex-row  ;
+@apply relative flex flex-col gap-5 xl:flex-row  max-w-[1440px] mx-auto;
 }
 
 .hero__title{
@@ -37,14 +40,14 @@
 
 
 .hero__image-container{
-  @apply flex justify-end   w-full xl:flex-[1.5] xl:h-screen ;
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
 }
 
 .hero__image {
-  @apply relative z-0 h-[590px] w-[90%] xl:w-full xl:h-full;
+  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0
 }
 .hero__image-overlay {
-  @apply absolute bg-hero-bg z-[-10] h-[590px] w-full bg-repeat-round -right-1/4 xl:-top-24 xl:-right-1/2 xl:h-screen overflow-hidden;
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] ;
 }
 
 
