@@ -1,7 +1,8 @@
+import Hero from "@/components/Hero";
 
  function Home() {
   return (
-    <h1>raja daud</h1>
+    <Hero />
   );
 }
 export default Home;

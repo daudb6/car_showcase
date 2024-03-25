@@ -1,4 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/* START: General style */
+.padding-x{
+  @apply sm:px-16 px-6; 
+}
+
+.custom-btn{
+  @apply px-6 py-3 outline-none
+}
+
+
+
+/* START: Hero Style */
+.hero{
+@apply flex flex-col xl:flex-row  ;
+}
+
+.hero__title{
+  @apply font-extrabold text-[50px] 2xl:text-[72px] sm:text-[64px];
+}
+
+.hero__subtitle{
+  @apply text-[27px] text-black-100 mt-5 font-light;
+}
+
+
+.hero__image-container{
+  @apply flex justify-end   w-full xl:flex-[1.5] xl:h-screen ;
+}
+
+.hero__image {
+  @apply relative z-0 h-[590px] w-[90%] xl:w-full xl:h-full;
+}
+.hero__image-overlay {
+  @apply absolute bg-hero-bg z-[-10] h-[590px] w-full bg-repeat-round -right-1/4 xl:-top-24 xl:-right-1/2 xl:h-screen overflow-hidden;
+}
+
 
